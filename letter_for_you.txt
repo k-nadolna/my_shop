@@ -1,0 +1,14 @@
+Ogólny zarys:
+Prototyp sklepu internetowego (pomysł zaczerpnięty z YT, tak wiem normalnie użytkownik nie ma możliwości zminay bazy towarów w sklepie :D)
+-Możliwe dodawanie nowych produktów do bazy danych (add_product.php)
+- widok wprowadzonych do bazy produktów (view_products.php) z możliwością ich zmiany (edit.php) lub usunięcia (delete_product.php)
+- zakładka sklepu - produkty w sklepie z możliwością dodania do koszyka (shop.php)
+- koszyk - tabela produktów dodanych do koszyka (cart.php) - z możliwością zmiany ilości, usunięciem z koszyka (remove_from_cart.php), usunięciem całej zawartości koszyka(delete_cart.php) i  całkowitą sumą za zakupy
+- nav.php - pasek menu
+
+Założenia:
+- nazwy produktów nie mogą się powtrzać - stąd skomplikowany twór w edit.php
+- sesja dodana w view_products i delete_product - bo w pewnym momencie uciekało mi Id, ale musze jeszcze sprawdzić czy da się to inaczej zrobić :)
+
+* nie skupiałam się za bardzo na css więc może coś przeskakiwać/ chować się przy zmianie wielkości ekranu :)
+* oczywiście jest tu jeszcze mnóstwo do ulepszenia ale chodzi mi bardziej o ogólną ocenę czy idę w dobrym kierunku/ czego unikać/ co jest ok/ co razi w oczy :D
