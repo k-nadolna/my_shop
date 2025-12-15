@@ -50,7 +50,7 @@
             <p><b>$product_name</b> has been changed</p><br>
             </div>";
             echo "<a href='view_products.php' class='btn'>Come back to View Products</a>";
-            echo "<a href='shop.php' class='btn'>Go to shop</a>";
+            echo "<a href='index.php' class='btn'>Go to shop</a>";
           } else
           //situation when name is in the products table
            {

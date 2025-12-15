@@ -52,7 +52,7 @@
                 <p><b>$product_name</b> added to base</p>
                 </div><br>";
           echo "<a href='add_product.php' class='btn'>Add next product</a>";
-          echo "<a href='shop.php' class='btn'>Go to shop</a>";
+          echo "<a href='index.php' class='btn'>Go to shop</a>";
         }
       }else{
     ?>

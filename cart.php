@@ -101,7 +101,7 @@
             <div class='box box_cart'>
               <p>Grand total: $total_sum </p>
               <br>
-              <a href='shop.php' class='btn'>Continue Shopping</a>
+              <a href='index.php' class='btn'>Continue Shopping</a>
               <a href='delete_cart.php' class='btn_cancel'>Delete all</a>
             </div>";
 
@@ -111,7 +111,7 @@
 
       <p> Sorry, your cart is empty</p>
       <br>  
-      <a href='shop.php' class='btn'>Go Shopping!</a>
+      <a href='index.php' class='btn'>Go Shopping!</a>
       <?php  } ?>    
     </div>   
   </div>

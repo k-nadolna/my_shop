@@ -77,7 +77,7 @@
                 <img src='images/products/$product_image'>
                 <p class='product_name'>$product_name</p>
                 <p>$ $product_price</p>
-                <form action='shop.php?Id=$id' method='post'>
+                <form action='index.php?Id=$id' method='post'>
                 <input type='submit' class='btn'  name='submit' value='Add to cart'>
                 </form>
             </div>";
