@@ -39,12 +39,20 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`Id`, `ProductName`, `ProductImage`, `ProductPrice`) VALUES
-(17, 'Car', 'car.jpg', 45),
-(20, 'Train', 'train.jpg', 30),
-(25, 'Ball', 'reindeer.jpg', 55),
-(32, 'Lego', 'lego.jpg', 50),
-(33, 'Puzzle', 'puzzle.jpg', 15),
-(34, 'Turkey', 'turkey.jpg', 22);
+(1, 'Car', 'car.jpg', 45),
+(2, 'Train', 'train.jpg', 30),
+(3, 'Ball', 'reindeer.jpg', 55),
+(4, 'Lego', 'lego.jpg', 50),
+(5, 'Puzzle', 'puzzle.jpg', 15),
+(6, 'Turkey', 'turkey.jpg', 22),
+(7, 'Bear', 'bear.jpg', 17),
+(8, 'Dog', 'dog.jpg', 10),
+(9, 'Frog', 'frog.jpg', 9),
+(10, 'Reindeer', 'reindeer.jpg', 22),
+(11, 'Sheep', 'sheep.jpg', 18),
+(12, 'Truck', 'turkey.jpg', 22),
+(13, 'Pop-it', 'pop-it.jpg', 6),
+(14, 'Puppets', 'puppets.jpg', 20);
 
 --
 -- Indeksy dla zrzutów tabel
