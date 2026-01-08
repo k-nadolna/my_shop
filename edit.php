@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add produckt</title>
+  <link rel="icon" href="images/cart.png" type="image/png">
   <link rel='stylesheet' href='styles/style.css'>
 </head>
 <body>
@@ -94,5 +95,6 @@
     </div>
   </div>
   
+  <script src="app.js"></script>
 </body>
 </html>

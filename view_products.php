@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View products</title>
+  <link rel="icon" href="images/cart.png" type="image/png">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -24,10 +25,10 @@
     <div class='box'>
       <table>
         <thead>
-          <th>Id</th>
+          <th class='base_name_id'>Id</th>
           <th>Product Image</th>
-          <th>Product Name</th>
-          <th>Product Price</th>
+          <th class='base_name_column'>Product Name</th>
+          <th class='base_price_column'>Product Price</th>
           <th>Action</th>
         </thead>
         <tbody>
@@ -46,10 +47,11 @@
             $id = $product['Id'];
 
             echo "<tr>
-            <td>$id</td>
-            <td><img class='thumbnail' src='images/products/$product_image'></td>
-            <td>$product_name</td>
-            <td>$product_price</td>
+            <td class='base_name_id'>$id</td>
+            <td><img class='thumbnail' src='images/products/$product_image'>
+            <span class='base_mobile_info'>$product_name ($id)</span></td>
+            <td class='base_name_column'>$product_name</td>
+            <td class='base_price_column'>$product_price</td>
             <td>
             <a href='edit.php?Id=$id'><img class='icon 'src='images/edit.png'></a>
             <a href='delete_product.php?Id=$id'><img class='icon' src='images/remove.png'></a>
@@ -65,5 +67,7 @@
       </table>
     </div>
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

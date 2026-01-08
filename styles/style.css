@@ -52,6 +52,14 @@ nav{
  transition: all 0.5s;
 }
 
+.mobile_button{
+  display: none;
+}
+
+.mobile_menu{
+  display:  none;
+}
+
 .hero{
   padding: 30px 0px;
 }
@@ -95,7 +103,7 @@ header{
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   height: 36px;
-  margin: 0px 15px;
+  margin: 15px;
   padding: 10px 15px;
   transition: all 0.5s;
 }
@@ -161,12 +169,16 @@ td {
 }
 
 .box .thumbnail{
-  height: 80px;
+  height: 100px;
 }
 
 .icon{
   max-height: 20px;
   margin: 5px;
+}
+
+.base_mobile_info{
+  display: none;
 }
 
 /* edit product */
@@ -190,6 +202,11 @@ td {
 }
 
 /* cart */
+
+.cart_image_column{
+  padding: 10px;
+}
+
 .cart_quantity{
   background-color: rgba(255, 255, 255, 0.7);;
   border: none;
@@ -209,7 +226,7 @@ td {
   border-radius: 5px;
   font-size: 12px;
   height: 25px;
-  margin-top: 3px;
+  margin: 0px 5px;
   width: 55px;
   padding: 0px 2px;
   outline: none;
@@ -226,4 +243,102 @@ td {
 .message_add_cart{
   display: none;
   width: 50%;
+}
+
+.cart_name{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart_info_column{
+  padding: 10px;
+  text-align: left;
+}
+
+.td_quantity{
+  display: flex;
+  align-items: center;
+}
+
+.cart_remove{
+  height: 20px;
+}
+
+.cart_total{
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.cart_remove_icon{
+  margin: 0px;
+}
+
+.box_cart{
+  display: flex;
+  flex-direction: column;
+}
+
+.box_cart a{
+  height: auto;
+}
+
+@media screen and (max-width: 576px){
+  .logo a{
+  font-size: 20px;
+}
+
+  .menu{
+    display: none;
+  }
+
+  .mobile_button{
+    display: block;
+  }
+
+  .mobile_button img{
+      height: 25px;
+  }
+
+  .mobile_menu{
+    display: none;
+  }
+
+  .mobile_menu.show{
+    background: #e7abadff;
+    box-shadow:  5px 5px 10px rgb(124, 100, 100);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 10px 0px;
+    width: 100vw;
+  }
+
+  .mobile_menu a{
+    margin: 10px 20px;
+  }
+
+  .field{
+  width: 100%;
+}
+ 
+  .base_name_id{
+    display: none;
+  }
+
+  .base_name_column{
+    display: none;
+  }
+
+  .base_price_column{
+    display: none;
+  }
+
+  .base_mobile_info{
+  display: block;
+}
+
+.cart_quantity{
+  width: 20px;
+
 }

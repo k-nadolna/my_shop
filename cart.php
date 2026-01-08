@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Cart</title>
+  <link rel="icon" href="images/cart.png" type="image/png">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -42,13 +43,7 @@
           if (mysqli_num_rows($query) != 0){
         echo "  <table>
                   <thead>
-                    <th>ID</th>
-                    <th>Product Image</th>
-                    <th>Product Name</th>
-                    <th>Product Price</th>
-                    <th>Product Quantity</th>
-                    <th>Total price</th>
-                    <th>Action</th>
+                  
                   </thead>
                 <tbody>";
 
@@ -64,21 +59,19 @@
             echo "
                 <tr>
                  <form action='cart.php' method='POST'>
-                  <td>$id</td>
-                  <td><img class='thumbnail' src='images/products/$product_image'></td>
-                  <td>$product_name</td>
-                  <td>$product_price</td>
-                  <td class='td_quantity'>
+                  <td class='cart_image_column'><img class='thumbnail' src='images/products/$product_image'></td>
+                  <td class='cart_info_column'><span class='cart_name'>$product_name</span>
+                  <div class='td_quantity'>
                     <input type=hidden name='id' value ='$id'>
                     <input type='number' min='1' max='10' value='$quantity' class='cart_quantity' name='update_quantity'>
                     <input type='submit' name='submit' class='cart_btn_update' value='Update'>
-                  </form>
-                  </td>
-                  <td>$total_value</td>
-                  <td>
-                    <a href='remove_from_cart.php?Id=$id'>
-                    <img class='icon' src='images/remove.png'>
+                    <a href='remove_from_cart.php?Id=$id' class='cart_remove'>
+                    <img class='icon cart_remove_icon' src='images/remove.png'>
                     </a>
+                  </form>
+                  </div>
+                <p class='cart_total'>$total_value</p>
+                   
                   </td>
               </tr>";
 
@@ -100,7 +93,6 @@
 
             <div class='box box_cart'>
               <p>Grand total: $total_sum </p>
-              <br>
               <a href='index.php' class='btn'>Continue Shopping</a>
               <a href='delete_cart.php' class='btn_cancel'>Delete all</a>
             </div>";
@@ -115,5 +107,7 @@
       <?php  } ?>    
     </div>   
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

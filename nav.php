@@ -8,9 +8,16 @@ echo
       <a href='add_product.php'>Add product</a>
       <a href='view_products.php'>View produckts</a>
       <a href='index.php'>Shop</a>
-      <a href='cart.php'>Cart
-        <!-- <img class='cart-icon' src='images/cart.png'> -->
-      </a>
-    </div>  
+      <a href='cart.php'>Cart</a>
+    </div>
+    <div class='mobile_button'>
+      <img src='images/menu.png'>
+    </div> 
+    <div class='mobile_menu'>
+      <a href='add_product.php'>Add product</a>
+      <a href='view_products.php'>View produckts</a>
+      <a href='index.php'>Shop</a>
+      <a href='cart.php'>Cart</a>
+    </div> 
   </nav>";
   ?>
