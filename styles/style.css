@@ -86,6 +86,10 @@ header{
   text-align: center;
 }
 
+.box_shop{
+  padding: 25px 25px 0px 25px;
+}
+
 .box img{
   border-radius: 5px;
   height: 180px;
@@ -113,6 +117,21 @@ header{
   background-color:  #9f259b;
   color: rgba(255, 255, 255);
   transition: all 0.5s;
+}
+
+
+.add_to_cart_btn{
+  margin: 0px 15px 15px 15px;
+}
+
+.product_info{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_info p{
+  margin: 10px 0px;
 }
 
 /* add product to base */
@@ -240,9 +259,18 @@ td {
   transition: all 0.5s;
 }
 
-.message_add_cart{
+/* .message_add_cart{
   display: none;
   width: 50%;
+} */
+
+.message {
+    color: green;
+    font-weight: 600;
+    margin-bottom: 5px;
+    min-height: 25px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
 }
 
 .cart_name{
