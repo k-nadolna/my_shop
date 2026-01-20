@@ -15,7 +15,8 @@ echo
       <a href='view_products.php'>View produckts</a>
       <a href='index.php'>Shop</a>
       <a href='cart.php'>
-      <span class='cart-count'>$cartCount</span> 🛒 </a>
+      <span class='cart-count'>Cart ($cartCount)</span>
+      </a>
     </div>
     <div class='mobile_button'>
       <img src='images/menu.png'>
@@ -25,7 +26,8 @@ echo
       <a href='view_products.php'>View produckts</a>
       <a href='index.php'>Shop</a>
       <a href='cart.php'>
-      <span class='cart-count'><?= $cartCount ?>🛒 </span>Cart</a>
+     <span class='cart-count'>Cart ($cartCount)</span>
+      </a>
     </div> 
   </nav>";
   ?>
